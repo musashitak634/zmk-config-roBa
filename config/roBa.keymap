@@ -170,7 +170,7 @@
 &kp Q             &kp W             &kp E         &kp R                       &kp T                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S             &kp D         &kp F                       &kp G             &kp LS(LG(S))       &kp MINUS         &kp H        &kp J  &kp K      &kp L    &lt 3 BACKSPACE
 &mt LEFT_SHIFT Z  &mt LSHIFT X      &kp C         &kp V                       &kp B             &kp COLON           &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 6 LANGUAGE_1  &lt 2 ENTER                             &lt 7 DELETE
+&kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 6 LANGUAGE_1  &lt 2 ENTER                             &lt 0 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -207,10 +207,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mo 5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
@@ -229,15 +229,6 @@
 &kp AT            &kp SEMI  &kp DLLR   &trans             &kp LA(TAB)    &trans         &trans       &kp HASH           &kp LG(LBKT)  &trans  &kp LG(RBKT)  &kp LA(BACKSPACE)
 &kp LS(LG(Z))     &trans    &kp COLON  &trans             &kp BACKSLASH  &trans         &bootloader  &kp LS(AMPERSAND)  &trans        &trans  &trans        &bt BT_CLR
 &trans            &trans    &trans     &doublequotations  &brakets2      &brackets      &trans       &trans                                                 &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mo 5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
     };
