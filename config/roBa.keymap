@@ -125,28 +125,28 @@
         brackets: brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LC(B)>;
+            bindings = <&kp LANGUAGE_2 &kp LPAR &kp RPAR &kp LC(B)>;
             label = "BRACKETS";
         };
 
         brakets2: brakets2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT &kp LC(B)>;
+            bindings = <&kp LANG2 &kp LBKT &kp RBKT &kp LC(B)>;
             label = "BRAKETS2";
         };
 
         doublequotations: doublequotations {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DQT &kp DQT &kp LC(B)>;
+            bindings = <&kp LANG2 &kp DQT &kp DQT &kp LC(B)>;
             label = "DOUBLEQUOTATIONS";
         };
 
         shaka6satori: shaka6satori {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp H &kp A &kp K &kp A &kp N6 &kp S &kp A &kp T &kp O &kp R &kp I>;
+            bindings = <&kp LANGUAGE_2 &kp S &kp H &kp A &kp K &kp A &kp N6 &kp S &kp A &kp T &kp O &kp R &kp I>;
             label = "SHAKA6SATORI";
         };
     };
