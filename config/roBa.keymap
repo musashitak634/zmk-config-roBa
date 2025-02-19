@@ -8,9 +8,9 @@
 #define NUM 6
 
 &mt {
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     quick-tap-ms = <0>;
-    tapping-term-ms = <140>;
+    tapping-term-ms = <160>;
 };
 
 &lt {
