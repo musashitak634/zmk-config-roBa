@@ -112,6 +112,12 @@
             bindings = <&kp LC(LS(DOWN_ARROW))>;
             key-positions = <41 19 21>;
         };
+
+        home {
+            bindings = <&kp LG(H)>;
+            key-positions = <21 17>;
+            layers = <0>;
+        };
     };
 
     macros {
