@@ -12,17 +12,18 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-     arrows {
-         layers = <8>;
-         bindings =
-             <&kp RIGHT_ARROW>,
-             <&kp LEFT_ARROW>,
-             <&kp UP_ARROW>,
-             <&kp DOWN_ARROW>;
-         tick = <10>;
-         wait-ms = <5>;
-         tap-ms = <5>;
-     };
+    arrows {
+        layers = <8>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -123,6 +124,16 @@
         adv4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <40 19>;
+        };
+
+        tolayer8 {
+            bindings = <&to 8>;
+            key-positions = <41 42 8>;
+        };
+
+        tolayer0 {
+            bindings = <&to 0>;
+            key-positions = <41 42 9>;
         };
     };
 
