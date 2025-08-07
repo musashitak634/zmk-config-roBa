@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -54,7 +53,7 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
- 
+
         shakamacro {
             bindings = <&shaka6satori>;
             key-positions = <40 29>;
@@ -121,14 +120,9 @@
             key-positions = <41 19 21>;
         };
 
-        boot_loader {
-            bindings = <&bootloader>;
-            key-positions = <40 28>;
-        };
-
-        blue_tooth_clear_all {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <40 16>;
+        adv4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <40 19>;
         };
     };
 
