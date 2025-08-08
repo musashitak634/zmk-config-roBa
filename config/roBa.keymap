@@ -63,27 +63,23 @@
         };
 
         adv0 {
-            bindings = <&bt BT_SEL 0>;
+            bindings = <&adv0andtol0>;
             key-positions = <40 30>;
-            layers = <0>;
         };
 
         adv1 {
-            bindings = <&bt BT_SEL 1>;
+            bindings = <&adv1andtol0>;
             key-positions = <40 31>;
-            layers = <0>;
         };
 
         adv2 {
-            bindings = <&bt BT_SEL 2>;
+            bindings = <&adv2andtol0>;
             key-positions = <40 32>;
-            layers = <0>;
         };
 
         adv3 {
-            bindings = <&bt BT_SEL 3>;
+            bindings = <&adv3andtol0>;
             key-positions = <40 33>;
-            layers = <0>;
         };
 
         lookup {
@@ -129,11 +125,10 @@
         adv4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <40 19>;
-            layers = <7>;
         };
 
         tolayer8 {
-            bindings = <&to 8>;
+            bindings = <&adv4andtol7>;
             key-positions = <8 40>;
         };
 
@@ -177,6 +172,41 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2 &kp S &kp H &kp A &kp K &kp A &kp N6 &kp S &kp A &kp T &kp O &kp R &kp I>;
             label = "SHAKA6SATORI";
+        };
+
+        adv0andtol0: adv0andtol0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "ADV0ANDTOL0";
+        };
+
+        adv1andtol0: adv1andtol0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 0>;
+            label = "ADV1ANDTOL0";
+        };
+
+        adv2andtol0: adv2andtol0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 0>;
+            label = "ADV2ANDTOL0";
+        };
+
+        adv3andtol0: adv3andtol0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3 &to 0>;
+            label = "ADV3ANDTOL0";
+        };
+
+        adv4andtol7: adv4andtol7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &to 7>;
+            label = "ADV4ANDTOL7";
         };
     };
 
