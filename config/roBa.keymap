@@ -65,21 +65,25 @@
         adv0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <40 30>;
+            layers = <0>;
         };
 
         adv1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <40 31>;
+            layers = <0>;
         };
 
         adv2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <40 32>;
+            layers = <0>;
         };
 
         adv3 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <40 33>;
+            layers = <0>;
         };
 
         lookup {
@@ -125,6 +129,7 @@
         adv4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <40 19>;
+            layers = <7>;
         };
 
         tolayer8 {
@@ -267,10 +272,10 @@
 
         layer_8 {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T                          &kp Y      &kp U    &kp I     &kp O     &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &kp H       &kp J      &kp K      &kp L    &kp SEMI  &kp SQT   &kp RSHFT
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LBKT  &kp RBKT
-&trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                                 &trans
+&kp Q   &kp W   &kp E   &kp R   &kp T                          &kp Y    &kp U  &kp I      &kp O    &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &kp H       &kp H      &kp H    &kp J  &kp K      &kp L    &kp BSPC
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
             >;
         };
     };
