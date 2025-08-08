@@ -128,7 +128,7 @@
         };
 
         tolayer8 {
-            bindings = <&adv4andtol7>;
+            bindings = <&to 7>;
             key-positions = <8 40>;
         };
 
