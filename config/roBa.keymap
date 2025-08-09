@@ -9,6 +9,11 @@
     tapping-term-ms = <140>;
 };
 
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <140>;
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <6>;
