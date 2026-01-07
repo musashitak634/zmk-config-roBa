@@ -6,7 +6,7 @@
 &mt {
     flavor = "tap-preferred";
     quick-tap-ms = <0>;
-    tapping-term-ms = <145>;
+    tapping-term-ms = <142>;
 };
 
 &lt {
@@ -20,7 +20,6 @@
 
     arrows {
         layers = <8>;
-
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
