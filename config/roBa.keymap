@@ -182,35 +182,40 @@
         adv0andtol0: adv0andtol0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
+
             label = "ADV0ANDTOL0";
         };
 
         adv1andtol0: adv1andtol0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 0>;
+
             label = "ADV1ANDTOL0";
         };
 
         adv2andtol0: adv2andtol0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &to 0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 0>;
+
             label = "ADV2ANDTOL0";
         };
 
         adv3andtol0: adv3andtol0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3 &to 0>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 0>;
+
             label = "ADV3ANDTOL0";
         };
 
         adv4andtol1: adv4andtol7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4 &to 1>;
+            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 1>;
+
             label = "ADV4ANDTOL7";
         };
     };
