@@ -11,7 +11,7 @@
 
 &lt {
     flavor = "hold-preferred";
-    tapping-term-ms = <145>;
+    tapping-term-ms = <150>;
 };
 
 &trackball {
