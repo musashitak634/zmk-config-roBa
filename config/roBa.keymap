@@ -312,9 +312,9 @@
 
         layer_8 {
             bindings = <
-&kp Q   &kp Y   &kp R   &kp L   &kp J                          &kp P    &kp G  &kp U      &kp O    &kp W
+&kp Q   &kp Y   &kp R   &kp L   &kp J                          &kp F    &kp G  &kp U      &kp O    &kp W
 &kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &kp BSPC
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp F    &kp D  &kp COMMA  &kp DOT  &kp FSLH
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp P    &kp D  &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
             >;
         };
