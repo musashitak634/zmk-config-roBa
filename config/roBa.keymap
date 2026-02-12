@@ -164,32 +164,21 @@
         brackets: brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LANGUAGE_2 &kp LPAR>,
-                <&macro_wait_time 50>,
-                <&kp RPAR &kp LC(B)>;
-
+            bindings = <&kp LANGUAGE_2 &kp LPAR &kp RPAR &kp LC(B)>;
             label = "BRACKETS";
         };
 
         brakets2: brakets2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LANG2 &kp LBKT>,
-                <&macro_wait_time 50>,
-                <&kp RBKT &kp LC(B)>;
-
+            bindings = <&kp LANG2 &kp LBKT &kp RBKT &kp LC(B)>;
             label = "BRAKETS2";
         };
 
         doublequotations: doublequotations {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LANG2 &kp DQT &kp DQT &kp LC(B)>,
-                <&macro_wait_time 50>;
-
+            bindings = <&kp LANG2 &kp DQT &kp DQT &kp LC(B)>;
             label = "DOUBLEQUOTATIONS";
         };
 
@@ -243,23 +232,14 @@
         LY: LY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&macro_wait_time 50>, <&kp Y>;
-
+            bindings = <&kp L &kp Y>;
             label = "LY";
         };
 
         koto: koto {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&none &kp K>,
-                <&macro_wait_time 50>,
-                <&kp O>,
-                <&macro_wait_time 50>,
-                <&kp T>,
-                <&macro_wait_time 50>,
-                <&kp O>;
-
+            bindings = <&kp K &kp O &kp T &kp O>;
             label = "KOTO";
         };
     };
