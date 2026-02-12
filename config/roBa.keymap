@@ -10,8 +10,8 @@
 };
 
 &lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <145>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <150>;
 };
 
 &trackball {
