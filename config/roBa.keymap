@@ -260,8 +260,8 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp H         &kp F                       &kp L                                                   &kp J        &kp G  &kp U      &kp Y    &lt 4 BACKSPACE
-&kp A             &kp R             &kp N         &kp S                       &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &kp O
+&kp Q             &kp F             &kp R         &kp W                       &kp L                                                   &kp J        &kp G  &kp U      &kp Y    &lt 4 BACKSPACE
+&kp A             &kp H             &kp N         &kp S                       &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &kp O
 &mt LEFT_SHIFT Z  &lt 2 X           &kp C         &kp B                       &kp V             &kp COLON           &kp SEMICOLON     &kp P        &kp D  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 7 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 7 LANGUAGE_1  &lt 3 ENTER                             &lt 5 DELETE
             >;
