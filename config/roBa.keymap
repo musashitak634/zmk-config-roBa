@@ -269,8 +269,8 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp R         &kp Y                       &kp L                                                   &kp J        &kp G  &kp U      &kp O    &kp F
-&kp A             &kp S             &kp N         &kp H                       &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt 4 BACKSPACE
+&kp Q             &kp Y             &kp R         &kp W                       &kp L                                                   &kp J        &kp G  &kp U      &kp O    &kp F
+&kp A             &kp H             &kp N         &kp S                       &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt 4 BACKSPACE
 &mt LEFT_SHIFT Z  &lt 2 X           &kp C         &kp V                       &kp B             &kp COLON           &kp SEMICOLON     &kp P        &kp D  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 7 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 7 LANGUAGE_1  &lt 3 ENTER                             &lt 5 DELETE
             >;
@@ -345,8 +345,8 @@
 
         layer_8 {
             bindings = <
-&kp Q   &kp W   &kp R   &kp Y   &kp L                          &kp J    &kp G  &kp U      &kp O    &kp F
-&kp A   &kp S   &kp N   &kp H   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &kp BSPC
+&kp Q   &kp Y   &kp R   &kp W   &kp L                          &kp J    &kp G  &kp U      &kp O    &kp F
+&kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &kp BSPC
 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp P    &kp D  &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
             >;
