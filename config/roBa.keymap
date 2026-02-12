@@ -5,15 +5,16 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <120>;
     tapping-term-ms = <150>;
+    require-prior-idle-ms = <0>;
 };
 
 &lt {
     flavor = "tap-preferred";
     tapping-term-ms = <150>;
     quick-tap-ms = <120>;
-    require-prior-idle-ms = <50>;
+    require-prior-idle-ms = <0>;
 };
 
 &trackball {
