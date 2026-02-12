@@ -5,15 +5,15 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <120>;
-    tapping-term-ms = <150>;
+    quick-tap-ms = <100>;
+    tapping-term-ms = <147>;
     require-prior-idle-ms = <0>;
 };
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <120>;
+    tapping-term-ms = <147>;
+    quick-tap-ms = <100>;
     require-prior-idle-ms = <0>;
 };
 
