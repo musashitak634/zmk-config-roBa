@@ -141,6 +141,16 @@
             bindings = <&to 0>;
             key-positions = <40 9>;
         };
+
+        LY {
+            bindings = <&LY>;
+            key-positions = <4 3>;
+        };
+
+        koto {
+            bindings = <&koto>;
+            key-positions = <17 18>;
+        };
     };
 
     macros {
@@ -217,6 +227,29 @@
             bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 1>;
 
             label = "ADV4ANDTOL7";
+        };
+
+        LY: LY {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&macro_wait_time 50>, <&kp Y>;
+
+            label = "LY";
+        };
+
+        koto: koto {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none &kp K>,
+                <&macro_wait_time 50>,
+                <&kp O>,
+                <&macro_wait_time 50>,
+                <&kp T>,
+                <&macro_wait_time 50>,
+                <&kp O>;
+
+            label = "KOTO";
         };
     };
 
@@ -312,9 +345,9 @@
 
         layer_8 {
             bindings = <
-&kp Q   &kp Y   &kp R   &kp W   &kp L                          &kp J    &kp G  &kp U      &kp O    &kp F
-&kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &kp BSPC
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp P    &kp D  &kp COMMA  &kp DOT  &kp FSLH
+&kp Q   &kp W   &kp R   &kp Y   &kp L                          &kp P    &kp G  &kp U      &kp O    &kp F
+&kp A   &kp S   &kp N   &kp H   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &kp BSPC
+&kp Z   &kp X   &kp C   &kp V   &kp J   &kp N       &kp SEMI   &kp B    &kp D  &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
             >;
         };
