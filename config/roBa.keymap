@@ -15,7 +15,6 @@
     tapping-term-ms = <145>;
     quick-tap-ms = <125>;
     require-prior-idle-ms = <0>;
-    hold-trigger-key-positions = <21>;
 };
 
 &trackball {
