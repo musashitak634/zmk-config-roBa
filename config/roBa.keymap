@@ -268,27 +268,6 @@
             quick-tap-ms = <130>;
         };
 
-        arrowlayer: arrowlayer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ARROWLAYER";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <230>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <130>;
-        };
-
-        arrow2: arrow2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ARROW2";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <230>;
-            flavor = "tap-preferred";
-        };
-
         custom_behave_layer_8: custom_behave_layer_8 {
             compatible = "zmk,behavior-hold-tap";
             label = "CUSTOM_BEHAVE_LAYER_8";
