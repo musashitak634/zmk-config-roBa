@@ -266,9 +266,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            quick-tap-ms = <120>;
+            quick-tap-ms = <130>;
         };
 
         arrow2: arrow2 {
