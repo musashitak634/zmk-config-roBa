@@ -5,7 +5,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <100>;
+    quick-tap-ms = <120>;
     tapping-term-ms = <145>;
     require-prior-idle-ms = <0>;
 };
@@ -246,13 +246,6 @@
             bindings = <&kp K &kp O &kp T &kp O>;
             label = "KOTO";
         };
-
-        to_layer_8_macro: to_layer_8_macro {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 8 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_8_MACRO";
-        };
     };
 
     behaviors {
@@ -268,15 +261,25 @@
             quick-tap-ms = <130>;
         };
 
-        custom_behave_layer_8: custom_behave_layer_8 {
+        arrowlayer: arrowlayer {
             compatible = "zmk,behavior-hold-tap";
-            label = "CUSTOM_BEHAVE_LAYER_8";
-            bindings = <&mo>, <&to_layer_8_macro>;
+            label = "ARROWLAYER";
+            bindings = <&lt>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
             flavor = "tap-preferred";
             quick-tap-ms = <130>;
+        };
+
+        arrow2: arrow2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ARROW2";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -285,8 +288,8 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp F             &kp R         &kp W            &kp L                                                   &kp J        &kp G  &kp U      &kp Y    &kt BACKSPACE
-&kp A             &kp H             &kp N         &kp S            &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt 4 O
+&kp Q             &kp F             &kp R         &kp W            &kp L                                                   &kp J        &kp G  &kp U      &kp Y    &lt 4 BACKSPACE
+&kp A             &kp H             &kp N         &kp S            &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt_to_layer_0 4 O
 &mt LEFT_SHIFT Z  &lt 2 X           &kp C         &kp V            &kp B             &kp COLON           &kp SEMICOLON     &kp P        &kp D  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 7 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 7 LANGUAGE_1  &lt 3 ENTER                             &lt 5 DELETE
             >;
@@ -361,7 +364,7 @@
 
         layer_8 {
             bindings = <
-&kp Q   &kp F   &kp R   &kp W   &kp L                          &kp J    &kp G  &kp U      &kp Y    &kp BACKSPACE
+&kp Q   &kp F   &kp R   &kp W   &kp L                          &kp J    &kp G  &kp U      &kp Y    &lt 11 O
 &kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &lt 11 O
 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp P    &kp D  &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
