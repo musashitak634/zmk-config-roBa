@@ -5,17 +5,16 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <120>;
-    tapping-term-ms = <145>;
+    quick-tap-ms = <100>;
+    tapping-term-ms = <150>;
     require-prior-idle-ms = <0>;
 };
 
 &lt {
     flavor = "hold-preferred";
-    tapping-term-ms = <145>;
-    quick-tap-ms = <120>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <100>;
     require-prior-idle-ms = <0>;
-    hold-while-undecided-linger;
 };
 
 &trackball {
@@ -255,9 +254,9 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <145>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            quick-tap-ms = <120>;
+            quick-tap-ms = <100>;
         };
 
         arrowlayer: arrowlayer {
