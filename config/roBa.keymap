@@ -246,6 +246,13 @@
             bindings = <&kp K &kp O &kp T &kp O>;
             label = "KOTO";
         };
+
+        to_layer_8_macro: to_layer_8_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 8 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_8_MACRO";
+        };
     };
 
     behaviors {
@@ -282,10 +289,10 @@
             flavor = "tap-preferred";
         };
 
-        layer_to_8: layer_to_8 {
+        custom_behave_layer_8: custom_behave_layer_8 {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TO_8";
-            bindings = <&mo>, <&kp>;
+            label = "CUSTOM_BEHAVE_LAYER_8";
+            bindings = <&mo>, <&to_layer_8_macro>;
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
@@ -377,7 +384,7 @@
         layer_8 {
             bindings = <
 &kp Q   &kp F   &kp R   &kp W   &kp L                          &kp J    &kp G  &kp U      &kp Y    &kp BACKSPACE
-&kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &layer_to_8 11 O
+&kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &custom_behave_layer_8 11 O
 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp P    &kp D  &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
             >;
