@@ -307,7 +307,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp F             &kp R         &kp W            &kp L                                                   &kp J        &kp G  &kp U      &kp Y    &kt BACKSPACE
-&kp A             &kp H             &kp N         &kp S            &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt_to_layer_0 4 O
+&kp A             &kp H             &kp N         &kp S            &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt 4 O
 &mt LEFT_SHIFT Z  &lt 2 X           &kp C         &kp V            &kp B             &kp COLON           &kp SEMICOLON     &kp P        &kp D  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 7 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 7 LANGUAGE_1  &lt 3 ENTER                             &lt 5 DELETE
             >;
@@ -383,7 +383,7 @@
         layer_8 {
             bindings = <
 &kp Q   &kp F   &kp R   &kp W   &kp L                          &kp J    &kp G  &kp U      &kp Y    &kp BACKSPACE
-&kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &kp O
+&kp A   &kp H   &kp N   &kp S   &kp M   &kp H       &kp H      &kp K    &kp T  &kp E      &kp I    &lt 11 O
 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N       &kp SEMI   &kp P    &kp D  &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans  &trans  &trans      &kp SPACE  &kp RET                             &kp RSHFT
             >;
