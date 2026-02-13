@@ -282,13 +282,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <
-&kp Q             &kp F             &kp R         &kp W                       &kp L                                                   &kp J        &kp G  &kp U      &kp Y    &lt 4 BACKSPACE
-&kp A             &kp H             &kp N         &kp S                       &kp M             &kp LS(LG(S))       &kp MINUS         &kp K        &kp T  &kp E      &kp I    &lt 4 O
-&mt LEFT_SHIFT Z  &lt 2 X           &kp C         &kp V                       &kp B             &kp COLON           &kp SEMICOLON     &kp P        &kp D  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 7 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &lt 7 LANGUAGE_1  &lt 3 ENTER                             &lt 5 DELETE
-            >;
+       odefault_layer {
+    bindings = <
+    // Top row
+    &kp Q        &kp F        &kp R        &kp W        &kp L        &kp J        &kp G        &kp U        &mt_tapping_term 140 MOD_NONE KC_Y        &lt 4 BACKSPACE
+
+    // Home row
+    &kp A        &kp H        &mt_tapping_term 155 MOD_LALT KC_N       &mt_tapping_term 135 MOD_LSFT KC_S       &kp M        &kp LS(LG(S))        &kp MINUS        &kp K        &kp T        &kp E        &mt_tapping_term 165 MOD_LT O       &lt 4 O
+
+    // Bottom row / shift row
+    &mt_tapping_term 160 MOD_LSFT KC_Z        &lt 2 X        &kp C        &kp V        &kp B        &kp COLON        &kp SEMICOLON        &kp P        &mt_tapping_term 140 MOD_NONE KC_D        &kp COMMA        &kp DOT        &mt_tapping_term 160 MOD_LSFT KC_SLASH
+
+    // Thumb / mods
+    &kp LCTRL        &kp LEFT_CONTROL        &kp LEFT_ALT        &lt_to_layer_0 7 BACKSPACE        &mt_tapping_term 160 MOD_LSFT KC_SPACE        &mt_tapping_term 150 MOD_LGUI KC_LANG2        &lt 7 LANGUAGE_1        &lt 3 ENTER        &lt 5 DELETE
+    >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
