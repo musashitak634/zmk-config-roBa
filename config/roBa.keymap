@@ -5,7 +5,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <100>;
+    quick-tap-ms = <125>;
     tapping-term-ms = <145>;
     require-prior-idle-ms = <0>;
 };
@@ -13,7 +13,7 @@
 &lt {
     flavor = "hold-preferred";
     tapping-term-ms = <145>;
-    quick-tap-ms = <100>;
+    quick-tap-ms = <125>;
     require-prior-idle-ms = <0>;
     hold-trigger-key-positions = <21>;
 };
