@@ -255,9 +255,9 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <145>;
             flavor = "tap-preferred";
-            quick-tap-ms = <50>;
+            quick-tap-ms = <120>;
         };
 
         arrowlayer: arrowlayer {
@@ -266,7 +266,7 @@
             bindings = <&lt>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <145>;
             flavor = "tap-preferred";
             quick-tap-ms = <120>;
         };
