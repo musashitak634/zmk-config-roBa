@@ -227,7 +227,7 @@
         adv4andtol1: adv4andtol7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 1>;
+            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 8>;
 
             label = "ADV4ANDTOL7";
         };
