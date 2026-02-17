@@ -6,7 +6,7 @@
 &mt {
     flavor = "tap-preferred";
     quick-tap-ms = <0>;
-    tapping-term-ms = <160>;
+    tapping-term-ms = <148>;
     require-prior-idle-ms = <0>;
 };
 
@@ -265,7 +265,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <145>;
             flavor = "tap-preferred";
             quick-tap-ms = <0>;
         };
