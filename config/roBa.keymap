@@ -353,10 +353,10 @@
 
         layer_6 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DQT   &kp EXCL   &kp LS(TAB)        &kp TAB                                       &kp LA(Y)          &trans        &trans  &trans        &kp PRCNT
-&kp AT            &kp SEMI  &kp DLLR   &trans             &kp LA(TAB)    &trans         &bt BT_CLR_ALL  &kp HASH           &kp LG(LBKT)  &trans  &kp LG(RBKT)  &kp LA(BACKSPACE)
-&kp LS(LG(Z))     &trans    &kp COLON  &trans             &kp BACKSLASH  &trans         &bootloader     &kp LS(AMPERSAND)  &trans        &trans  &trans        &bt BT_CLR
-&trans            &trans    &trans     &doublequotations  &brakets2      &brackets      &trans          &trans                                                 &trans
+&kp SINGLE_QUOTE  &kp DQT   &kp EXCL   &kp LS(TAB)        &kp TAB                                    &kp LA(Y)          &trans        &trans  &trans        &kp PRCNT
+&kp AT            &kp SEMI  &kp DLLR   &trans             &kp LA(TAB)    &trans         &none        &kp HASH           &kp LG(LBKT)  &trans  &kp LG(RBKT)  &kp LA(BACKSPACE)
+&kp LS(LG(Z))     &trans    &kp COLON  &trans             &kp BACKSLASH  &trans         &bootloader  &kp LS(AMPERSAND)  &trans        &trans  &trans        &bt BT_CLR
+&trans            &trans    &trans     &doublequotations  &brakets2      &brackets      &trans       &trans                                                 &trans
             >;
         };
 
