@@ -144,16 +144,6 @@
             bindings = <&to 0>;
             key-positions = <40 9>;
         };
-
-        BL {
-            bindings = <&BL>;
-            key-positions = <4 3>;
-        };
-
-        KN {
-            bindings = <&KN>;
-            key-positions = <14 13>;
-        };
     };
 
     macros {
