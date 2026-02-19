@@ -145,14 +145,14 @@
             key-positions = <40 9>;
         };
 
-        LY {
-            bindings = <&LY>;
+        BL {
+            bindings = <&BL>;
             key-positions = <4 3>;
         };
 
-        koto {
-            bindings = <&koto>;
-            key-positions = <17 18>;
+        KN {
+            bindings = <&KN>;
+            key-positions = <14 13>;
         };
     };
 
@@ -232,17 +232,17 @@
             label = "ADV4ANDTOL7";
         };
 
-        LY: LY {
+        BL: LY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp Y>;
+            bindings = <&kp B &kp L>;
             label = "LY";
         };
 
-        koto: koto {
+        KN: koto {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K &kp O &kp T &kp O>;
+            bindings = <&kp K &kp N>;
             label = "KOTO";
         };
     };
