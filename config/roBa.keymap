@@ -231,20 +231,6 @@
 
             label = "ADV4ANDTOL7";
         };
-
-        BL: LY {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp L>;
-            label = "LY";
-        };
-
-        KN: koto {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp N>;
-            label = "KOTO";
-        };
     };
 
     behaviors {
