@@ -241,10 +241,10 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <145>;
+            tapping-term-ms = <140>;
             flavor = "tap-preferred";
-            quick-tap-ms = <0>;
-            hold-while-undecided;
+            quick-tap-ms = <30>;
+            retro-tap;
         };
 
         arrow2: arrow2 {
