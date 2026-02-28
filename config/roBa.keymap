@@ -145,6 +145,26 @@
             bindings = <&to 0>;
             key-positions = <40 9>;
         };
+
+        of {
+            bindings = <&of>;
+            key-positions = <2 21>;
+        };
+
+        from {
+            bindings = <&from>;
+            key-positions = <2 11 17>;
+        };
+
+        fl {
+            bindings = <&fl>;
+            key-positions = <2 6>;
+        };
+
+        for {
+            bindings = <&for>;
+            key-positions = <2 11>;
+        };
     };
 
     macros {
@@ -221,6 +241,34 @@
             bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 1>;
 
             label = "ADV4ANDTOL7";
+        };
+
+        of: of {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp F>;
+            label = "OF";
+        };
+
+        for: for {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp O &kp R>;
+            label = "FOR";
+        };
+
+        from: from {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp R &kp O &kp M>;
+            label = "FROM";
+        };
+
+        fl: fl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp L>;
+            label = "FL";
         };
     };
 
