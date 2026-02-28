@@ -15,6 +15,7 @@
     tapping-term-ms = <130>;
     require-prior-idle-ms = <0>;
     quick-tap-ms = <50>;
+    retro-tap;
 };
 
 &trackball {
@@ -253,7 +254,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <145>;
+            tapping-term-ms = <170>;
             flavor = "hold-preferred";
         };
     };
