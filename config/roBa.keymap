@@ -166,7 +166,13 @@
 
         for {
             bindings = <&for>;
-            key-positions = <2 11>;
+            key-positions = <2>;
+            timeout-ms = <80>;
+        };
+
+        ou {
+            bindings = <&ou>;
+            key-positions = <6 7>;
             timeout-ms = <80>;
         };
     };
@@ -273,6 +279,13 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp L>;
             label = "FL";
+        };
+
+        ou: ou {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+            label = "OU";
         };
     };
 
