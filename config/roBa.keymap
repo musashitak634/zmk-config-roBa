@@ -149,25 +149,25 @@
         of {
             bindings = <&of>;
             key-positions = <2 21>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
         };
 
         from {
             bindings = <&from>;
             key-positions = <2 11 17>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
         };
 
         fl {
             bindings = <&fl>;
             key-positions = <2 6>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
         };
 
         for {
             bindings = <&for>;
             key-positions = <2 11>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
         };
     };
 
