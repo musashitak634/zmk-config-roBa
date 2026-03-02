@@ -149,16 +149,19 @@
         of {
             bindings = <&of>;
             key-positions = <2 21>;
+            timeout-ms = <50>;
         };
 
         fl {
             bindings = <&fl>;
             key-positions = <2 6>;
+            timeout-ms = <50>;
         };
 
         ou {
             bindings = <&ou>;
             key-positions = <6 7>;
+            timeout-ms = <50>;
         };
     };
 
