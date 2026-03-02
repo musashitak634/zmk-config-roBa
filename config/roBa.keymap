@@ -166,7 +166,7 @@
 
         for {
             bindings = <&for>;
-            key-positions = <2>;
+            key-positions = <11 2>;
             timeout-ms = <80>;
         };
 
