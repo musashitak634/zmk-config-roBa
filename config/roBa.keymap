@@ -319,10 +319,20 @@
             flavor = "hold-preferred";
         };
 
-        new_behavior: new_behavior {
+        JPLayer: JPLayer {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "JPLAYER";
             bindings = <&mo>, <&Lang1_JP_layer>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+            flavor = "hold-preferred";
+        };
+
+        EnLayer: EnLayer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ENLAYER";
+            bindings = <&mt>, <&Lang2_Eng_Layer>;
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
@@ -335,10 +345,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp F         &kp P                        &kp B                                                    &kp J        &kp L  &kp U      &kp Y       &lt 5 BACKSPACE
-&kp A             &kp R             &kp S         &kp T                        &kp G             &kp LS(LG(S))       &kp MINUS          &kp M        &kp N  &kp E      &kp I       &arrowlayer 5 O
-&mt LEFT_SHIFT Z  &lt 3 X           &kp C         &kp D                        &kp V             &kp COLON           &kp SEMICOLON      &kp K        &kp H  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &hold_preferred 8 BACKSPACE  &mt LSHIFT SPACE  &mt LGUI LANG2      &new_behavior 8 0  &lt 4 ENTER                                &mo 6
+&kp Q             &kp W             &kp F         &kp P                        &kp B                                                 &kp J        &kp L  &kp U      &kp Y       &lt 5 BACKSPACE
+&kp A             &kp R             &kp S         &kp T                        &kp G             &kp LS(LG(S))        &kp MINUS      &kp M        &kp N  &kp E      &kp I       &arrowlayer 5 O
+&mt LEFT_SHIFT Z  &lt 3 X           &kp C         &kp D                        &kp V             &kp COLON            &kp SEMICOLON  &kp K        &kp H  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &hold_preferred 8 BACKSPACE  &mt LSHIFT SPACE  &EnLayer LGUI 0      &JPLayer 8 0   &lt 4 ENTER                                &mo 6
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
