@@ -11,9 +11,11 @@
 };
 
 &lt {
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <130>;
     require-prior-idle-ms = <0>;
+    quick-tap-ms = <50>;
+    retro-tap;
 };
 
 &trackball {
@@ -324,7 +326,7 @@
 
         JPLAYER {
             bindings = <
-&kp Q             &kp W             &kp K         &kp B                     &kp P                                               &kp L        &kp J  &kp U      &kp Y       &lt 5 BACKSPACE
+&kp Q             &kp W             &kp K         &kp P                     &kp B                                               &kp J        &kp L  &kp U      &kp Y       &lt 5 BACKSPACE
 &kp A             &kp R             &kp S         &kp T                     &kp G             &kp LS(LG(S))      &kp MINUS      &kp M        &kp N  &kp E      &kp I       &arrowlayer 5 O
 &mt LEFT_SHIFT Z  &lt 7 X           &kp C         &kp D                     &kp V             &kp COLON          &kp SEMICOLON  &kp F        &kp H  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_CONTROL  &kp LEFT_ALT  &tap_keyrepeat_hold 11 0  &mt LSHIFT SPACE  &En_Layer 3 0      &JpLayer 11 0  &lt 8 ENTER                                &mo 6
@@ -398,7 +400,7 @@
 &mt LEFT_ALT ESC  &kp KP_NUMBER_7  &kp UP_ARROW     &kp KP_NUMBER_9  &kp LC(LG(D))                                               &kp EQUAL             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp TAB           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT        &kp LG(SPACE)  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SINGLE_QUOTE
 &kp LC(K)         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LA(SPACE)  &kp EQUAL                    &trans          &mt LEFT_SHIFT TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SEMICOLON
-&trans            &trans           &trans           &trans           &trans         &mt LGUI LANG2               &trans          &trans                                                          &trans
+&trans            &trans           &trans           &trans           &trans         &trans                       &trans          &trans                                                          &trans
             >;
         };
 
