@@ -241,6 +241,20 @@
             bindings = <&kp LPAR &kp RPAR &kp RETURN &kp LC(B)>;
             label = "JPBRACKETS";
         };
+
+        jpcomma: jpcomma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>;
+            label = "JPCOMMA";
+        };
+
+        jpdot: jpdot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>;
+            label = "JPDOT";
+        };
     };
 
     behaviors {
